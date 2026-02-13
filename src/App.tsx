@@ -5,6 +5,39 @@ import GivePage from './pages/GivePage'
 function App() {
   const location = useLocation()
 
+  const mobileNavItems: Array<{ label: string; to: string; isActive: boolean }> = [
+    {
+      label: 'Home',
+      to: '/#home',
+      isActive: location.pathname !== '/give' && (!location.hash || location.hash === '#home'),
+    },
+    {
+      label: 'About',
+      to: '/#about',
+      isActive: location.pathname !== '/give' && location.hash === '#about',
+    },
+    {
+      label: 'Events',
+      to: '/#times',
+      isActive: location.pathname !== '/give' && location.hash === '#times',
+    },
+    {
+      label: 'Ministries',
+      to: '/#ministries',
+      isActive: location.pathname !== '/give' && location.hash === '#ministries',
+    },
+    {
+      label: 'Give',
+      to: '/give',
+      isActive: location.pathname === '/give',
+    },
+    {
+      label: 'Contact',
+      to: '/#contact',
+      isActive: location.pathname !== '/give' && location.hash === '#contact',
+    },
+  ]
+
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.slice(1)
@@ -70,11 +103,43 @@ function App() {
             </Link>
             <Link
               to="/#watch"
-              className="inline-flex rounded-md bg-emerald-400 px-3 py-2 text-sm font-semibold text-slate-950 hover:bg-emerald-300"
+              className="inline-flex items-center justify-center text-center rounded-md bg-emerald-400 px-3 py-2 text-sm font-semibold text-slate-950 hover:bg-emerald-300"
             >
               Watch Online
             </Link>
           </div>
+        </div>
+
+        <div className="border-t border-emerald-900/30 bg-slate-950/40 md:hidden">
+          <nav aria-label="Mobile navigation" className="mx-auto max-w-6xl px-4 py-2">
+            <ol className="flex items-center gap-2 overflow-x-auto whitespace-nowrap text-sm text-slate-300">
+              {mobileNavItems.map((item, index) => {
+                const classes = item.isActive
+                  ? 'font-semibold text-white'
+                  : 'font-medium text-emerald-300 hover:text-emerald-200'
+
+                return (
+                  <li key={item.to} className="flex items-center gap-2">
+                    {item.isActive ? (
+                      <span aria-current="page" className={classes}>
+                        {item.label}
+                      </span>
+                    ) : (
+                      <Link to={item.to} className={classes}>
+                        {item.label}
+                      </Link>
+                    )}
+
+                    {index < mobileNavItems.length - 1 ? (
+                      <span aria-hidden="true" className="text-slate-500">
+                        /
+                      </span>
+                    ) : null}
+                  </li>
+                )
+              })}
+            </ol>
+          </nav>
         </div>
       </header>
 
