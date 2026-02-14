@@ -159,19 +159,20 @@ function App() {
               preload="metadata"
               src="/media/worship.mp4"
             />
-            <div className="absolute inset-0 bg-emerald-950/55" />
-            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-emerald-950 to-transparent" />
+            <div className="absolute inset-0 bg-white/60" />
+            <div className="absolute inset-0 bg-emerald-200/10" />
+            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white to-transparent" />
           </div>
 
           <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
             <div>
-              <p className="text-sm font-semibold tracking-wide text-slate-300">
+              <p className="text-sm font-semibold tracking-wide text-slate-600">
                 Welcome to RCCG Strong Tower Assembly
               </p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
                 A welcoming place to know Jesus, grow in faith, and serve together.
               </h1>
-              <p className="mt-5 max-w-prose text-lg leading-relaxed text-slate-200">
+              <p className="mt-5 max-w-prose text-lg leading-relaxed text-slate-800">
                 This is a first draft for the new church website. Replace the placeholder details (service
                 times, address, livestream links, and ministry descriptions) with your official information.
               </p>
@@ -185,63 +186,63 @@ function App() {
                 </a>
                 <a
                   href="#times"
-                  className="inline-flex items-center justify-center rounded-md border border-emerald-600/70 bg-slate-950/30 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-emerald-400"
+                  className="inline-flex items-center justify-center rounded-md border border-emerald-300 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 hover:border-emerald-400"
                 >
                   See service times
                 </a>
               </div>
 
-              <div className="mt-10 grid grid-cols-2 gap-4 text-sm text-slate-200 sm:max-w-md">
-                <div className="rounded-lg border border-emerald-900/50 bg-emerald-950/20 p-4">
-                  <div className="font-semibold text-white">Friendly community</div>
-                  <div className="mt-1 text-slate-300">All ages & backgrounds</div>
+              <div className="mt-10 grid grid-cols-2 gap-4 text-sm text-slate-700 sm:max-w-md">
+                <div className="rounded-lg border border-emerald-200/70 bg-white/70 p-4">
+                  <div className="font-semibold text-slate-900">Friendly community</div>
+                  <div className="mt-1 text-slate-600">All ages & backgrounds</div>
                 </div>
-                <div className="rounded-lg border border-emerald-900/50 bg-emerald-950/20 p-4">
-                  <div className="font-semibold text-white">Practical teaching</div>
-                  <div className="mt-1 text-slate-300">Biblical & life-giving</div>
+                <div className="rounded-lg border border-emerald-200/70 bg-white/70 p-4">
+                  <div className="font-semibold text-slate-900">Practical teaching</div>
+                  <div className="mt-1 text-slate-600">Biblical & life-giving</div>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-emerald-900/40 to-slate-950/40 blur-2xl" />
-              <div className="relative overflow-hidden rounded-2xl border border-emerald-900/50 bg-emerald-950/20 p-6">
+              <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-emerald-200/70 to-white/70 blur-2xl" />
+              <div className="relative overflow-hidden rounded-2xl border border-emerald-200/70 bg-white/70 p-6">
                 <div className="flex items-center justify-between gap-4">
                   <div>
-                    <div className="text-sm font-semibold text-white">This Sunday</div>
-                    <div className="mt-1 text-sm text-slate-300">Service times: we look forward to see you</div>
+                    <div className="text-sm font-semibold text-slate-900">This Sunday</div>
+                    <div className="mt-1 text-sm text-slate-600">Service times: we look forward to see you</div>
                   </div>
                   {/* <div className="rounded-full border border-emerald-800/60 bg-slate-950/20 px-3 py-1 text-xs font-semibold text-slate-200">
                     Draft
                   </div> */}
                 </div>
                 <div className="mt-6 grid gap-3">
-                  <div className="flex items-start justify-between gap-4 rounded-lg border border-emerald-900/40 bg-emerald-950/15 p-4">
+                  <div className="flex items-start justify-between gap-4 rounded-lg border border-emerald-200/70 bg-white/70 p-4">
                     <div>
-                      <div className="text-sm font-semibold text-white">Sunday Worship</div>
-                      <div className="mt-1 text-sm text-slate-300">10:00am – 12:30pm</div>
+                      <div className="text-sm font-semibold text-slate-900">Sunday Worship</div>
+                      <div className="mt-1 text-sm text-slate-600">10:00am – 12:30pm</div>
                     </div>
-                    <div className="text-xs text-slate-300">In-person</div>
+                    <div className="text-xs text-slate-500">In-person</div>
                   </div>
-                  <div className="flex items-start justify-between gap-4 rounded-lg border border-emerald-900/40 bg-emerald-950/15 p-4">
+                  <div className="flex items-start justify-between gap-4 rounded-lg border border-emerald-200/70 bg-white/70 p-4">
                     <div>
-                      <div className="text-sm font-semibold text-white">Bible Study</div>
-                      <div className="mt-1 text-sm text-slate-300">Tuesdays • 7:00 PM (Zoom)</div>
+                      <div className="text-sm font-semibold text-slate-900">Bible Study</div>
+                      <div className="mt-1 text-sm text-slate-600">Tuesdays • 7:00 PM (Zoom)</div>
                     </div>
-                    <div className="text-xs text-slate-300">Online</div>
+                    <div className="text-xs text-slate-500">Online</div>
                   </div>
-                  <div className="flex items-start justify-between gap-4 rounded-lg border border-emerald-900/40 bg-emerald-950/15 p-4">
+                  <div className="flex items-start justify-between gap-4 rounded-lg border border-emerald-200/70 bg-white/70 p-4">
                     <div>
-                      <div className="text-sm font-semibold text-white">Prayer Meeting</div>
-                      <div className="mt-1 text-sm text-slate-300">Fridays • 7:00 PM</div>
+                      <div className="text-sm font-semibold text-slate-900">Prayer Meeting</div>
+                      <div className="mt-1 text-sm text-slate-600">Fridays • 7:00 PM</div>
                     </div>
-                    <div className="text-xs text-slate-300">Online</div>
+                    <div className="text-xs text-slate-500">Online</div>
                   </div>
                 </div>
 
-                <div className="mt-6 rounded-lg border border-emerald-900/40 bg-emerald-950/15 p-4">
-                  <div className="text-sm font-semibold text-white">Location</div>
-                  <div className="mt-1 text-sm text-slate-300">
+                <div className="mt-6 rounded-lg border border-emerald-200/70 bg-white/70 p-4">
+                  <div className="text-sm font-semibold text-slate-900">Location</div>
+                  <div className="mt-1 text-sm text-slate-600">
                     30 McLennan Drive, Kensington VIC 3031
                   </div>
                 </div>
@@ -253,13 +254,13 @@ function App() {
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="3"
-                      className="text-slate-700"
+                      className="text-emerald-300"
                     />
-                    <circle cx="190" cy="56" r="5" className="fill-slate-200" />
-                    <circle cx="392" cy="36" r="5" className="fill-slate-200" />
-                    <circle cx="8" cy="92" r="5" className="fill-slate-200" />
+                    <circle cx="190" cy="56" r="5" className="fill-emerald-500" />
+                    <circle cx="392" cy="36" r="5" className="fill-emerald-500" />
+                    <circle cx="8" cy="92" r="5" className="fill-emerald-500" />
                   </svg>
-                  <div className="text-xs text-slate-400">Placeholder visual — swap with real photos later.</div>
+                  <div className="text-xs text-slate-500">Placeholder visual — swap with real photos later.</div>
                 </div>
               </div>
             </div>
