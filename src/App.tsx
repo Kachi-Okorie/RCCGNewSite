@@ -51,7 +51,7 @@ function App() {
   }, [location.pathname, location.hash])
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-white via-emerald-50 to-emerald-200 text-slate-900">
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-emerald-700 focus:px-3 focus:py-2 focus:text-sm focus:text-white"
@@ -59,37 +59,37 @@ function App() {
         Skip to content
       </a>
 
-      <header className="sticky top-0 z-40 border-b border-emerald-900/40 bg-slate-950/70 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-emerald-200/70 bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-4">
           <div className="flex items-center gap-3">
             <img
               src="/logo.png"
               alt="RCCG Strong Tower"
-              className="size-10 rounded-lg bg-slate-950/30 object-contain p-1 ring-1 ring-emerald-900/50"
+              className="size-10 rounded-lg bg-white/70 object-contain p-1 ring-1 ring-emerald-200/70"
             />
             <div className="leading-tight">
               <div className="text-sm font-semibold tracking-wide">RCCG Strong Tower Assembly</div>
-              <div className="text-xs text-slate-300">A church family in Australia</div>
+              <div className="text-xs text-slate-600">A church family in Australia</div>
             </div>
           </div>
 
-          <nav className="hidden items-center gap-6 text-sm text-slate-200 md:flex">
-            <Link className="hover:text-white" to="/#home">
+          <nav className="hidden items-center gap-6 text-sm text-slate-700 md:flex">
+            <Link className="hover:text-slate-900" to="/#home">
               Home
             </Link>
-            <Link className="hover:text-white" to="/#about">
+            <Link className="hover:text-slate-900" to="/#about">
               About
             </Link>
-            <Link className="hover:text-white" to="/#times">
+            <Link className="hover:text-slate-900" to="/#times">
               Events
             </Link>
-            <Link className="hover:text-white" to="/#ministries">
+            <Link className="hover:text-slate-900" to="/#ministries">
               Ministries
             </Link>
-            <Link className="hover:text-white" to="/give">
+            <Link className="hover:text-slate-900" to="/give">
               Give
             </Link>
-            <Link className="hover:text-white" to="/#contact">
+            <Link className="hover:text-slate-900" to="/#contact">
               Contact
             </Link>
           </nav>
@@ -97,7 +97,7 @@ function App() {
           <div className="flex items-center gap-2">
             <Link
               to="/#visit"
-              className="hidden rounded-md border border-emerald-700/60 px-3 py-2 text-sm font-medium text-slate-100 hover:border-emerald-400 md:inline-flex"
+              className="hidden rounded-md border border-emerald-300 bg-white/60 px-3 py-2 text-sm font-medium text-slate-900 hover:border-emerald-400 md:inline-flex"
             >
               Plan a Visit
             </Link>
@@ -110,13 +110,13 @@ function App() {
           </div>
         </div>
 
-        <div className="border-t border-emerald-900/30 bg-slate-950/40 md:hidden">
+        <div className="border-t border-emerald-200/70 bg-white/70 md:hidden">
           <nav aria-label="Mobile navigation" className="mx-auto max-w-6xl px-4 py-2">
-            <ol className="flex items-center gap-2 overflow-x-auto whitespace-nowrap text-sm text-slate-300">
+            <ol className="flex items-center gap-2 overflow-x-auto whitespace-nowrap text-sm text-slate-700">
               {mobileNavItems.map((item, index) => {
                 const classes = item.isActive
-                  ? 'font-semibold text-white'
-                  : 'font-medium text-emerald-300 hover:text-emerald-200'
+                  ? 'font-semibold text-slate-900'
+                  : 'font-medium text-emerald-700 hover:text-emerald-800'
 
                 return (
                   <li key={item.to} className="flex items-center gap-2">
@@ -131,7 +131,7 @@ function App() {
                     )}
 
                     {index < mobileNavItems.length - 1 ? (
-                      <span aria-hidden="true" className="text-slate-500">
+                      <span aria-hidden="true" className="text-slate-300">
                         /
                       </span>
                     ) : null}
@@ -160,7 +160,7 @@ function App() {
               src="/media/worship.mp4"
             />
             <div className="absolute inset-0 bg-emerald-950/55" />
-            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-slate-950 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-emerald-950 to-transparent" />
           </div>
 
           <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
@@ -266,57 +266,57 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="relative scroll-mt-24 overflow-hidden border-t border-slate-800/60">
+        <section id="about" className="relative scroll-mt-24 overflow-hidden border-t border-emerald-200/70">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/20 via-slate-950 to-slate-950" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50 to-emerald-100" />
             <div className="absolute -top-24 right-[-6rem] h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
             <div className="absolute -bottom-24 left-[-6rem] h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
           </div>
           <div className="relative mx-auto max-w-6xl px-4 py-16">
-            <p className="text-xs font-semibold tracking-[0.2em] text-slate-300">WELCOME TO RCCG STRONG TOWER</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            <p className="text-xs font-semibold tracking-[0.2em] text-slate-600">WELCOME TO RCCG STRONG TOWER</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
               A church family where God shapes lives for His purpose.
             </h2>
 
             <div className="mt-10 grid gap-10 md:grid-cols-2 md:items-center">
               <div className="relative">
-                <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-emerald-900/35 to-slate-950/35 blur-2xl" />
-                <div className="relative overflow-hidden rounded-2xl border border-emerald-900/50 bg-emerald-950/20">
+                <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-emerald-200/70 to-white/70 blur-2xl" />
+                <div className="relative overflow-hidden rounded-2xl border border-emerald-200/70 bg-white/70">
                   <div className="aspect-[4/5] w-full">
-                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-emerald-950/30 to-slate-950/10">
+                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-white to-emerald-100">
                       <div className="px-6 text-center">
-                        <div className="text-sm font-semibold text-white">Image placeholder</div>
-                        <div className="mt-2 text-sm text-slate-300">
+                        <div className="text-sm font-semibold text-slate-900">Image placeholder</div>
+                        <div className="mt-2 text-sm text-slate-600">
                           Replace with a welcome photo (e.g., pastors / congregation).
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="border-t border-emerald-900/40 p-4 text-xs text-slate-400">
+                  <div className="border-t border-emerald-200/70 p-4 text-xs text-slate-500">
                     Tip: use a portrait image for a similar look.
                   </div>
                 </div>
               </div>
 
               <div>
-                <div className="rounded-2xl border border-emerald-900/50 bg-emerald-950/20 p-6 sm:p-8">
+                <div className="rounded-2xl border border-emerald-200/70 bg-white/70 p-6 sm:p-8">
                   <div className="border-l-2 border-emerald-500/70 pl-5">
-                    <p className="text-base leading-relaxed text-slate-200">
+                    <p className="text-base leading-relaxed text-slate-700">
                       RCCG Strong Tower Assembly is part of the Redeemed Christian Church of God. Our prayer is
                       that God will mold you into a purpose-filled vessel, strengthened through every season of
                       life, and equipped to bring His hope to others.
                     </p>
-                    <p className="mt-4 text-base leading-relaxed text-slate-300">
+                    <p className="mt-4 text-base leading-relaxed text-slate-700">
                       Here at Strong Tower, you will discover that we care about you and your family; our desire as a church — a body of believers in Christ Jesus is to assist you on the path towards your spiritual growth. We Endeavor to meet both the spiritual and physical needs of everyone that comes to our church. This is a church where God’s word is taught in a clear and practical manner, relevant to us and to our situations today, resulting in an understanding of the things that God requires of us.
                     </p>
-                    <p className="mt-4 text-base leading-relaxed text-slate-300">
+                    <p className="mt-4 text-base leading-relaxed text-slate-700">
                       If you are searching for a church where you can enjoy a vibrant, personal fulfilling relationship with our Savior and Lord Jesus Christ, then RCCG STA is the place to be. We offer various programs, activities and ministries that you and your family will benefit from. We speak blessings over your family and invite you to worship with us in-person or online.
                     </p>
                   </div>
 
                   <div className="mt-6 grid gap-2 text-sm">
-                    <div className="font-semibold text-white">Pastor Lola &amp; Pastor Funso Akin-Ojelabi</div>
-                    <div className="text-slate-300">RCCG Strong Tower Assembly</div>
+                    <div className="font-semibold text-slate-900">Pastor Lola &amp; Pastor Funso Akin-Ojelabi</div>
+                    <div className="text-slate-600">RCCG Strong Tower Assembly</div>
                   </div>
 
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -328,7 +328,7 @@ function App() {
                     </a>
                     <a
                       href="#contact"
-                      className="inline-flex items-center justify-center rounded-md border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-slate-500"
+                      className="inline-flex items-center justify-center rounded-md border border-emerald-300 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 hover:border-emerald-400"
                     >
                       Book a time with Pastor
                     </a>
@@ -339,22 +339,22 @@ function App() {
           </div>
         </section>
 
-        <section id="times" className="relative scroll-mt-24 overflow-hidden border-t border-slate-800/60">
+        <section id="times" className="relative scroll-mt-24 overflow-hidden border-t border-emerald-200/70">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-emerald-950/10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50 to-emerald-100" />
             <div className="absolute -top-24 left-[-6rem] h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
           </div>
           <div className="relative mx-auto max-w-6xl px-4 py-16">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <h2 className="text-2xl font-semibold tracking-tight text-white">Service times</h2>
-                <p className="mt-2 max-w-prose text-lg text-slate-200">
+                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Service times</h2>
+                <p className="mt-2 max-w-prose text-lg text-slate-700">
                   Add confirmed times and livestream links when ready.
                 </p>
               </div>
               <a
                 href="#contact"
-                className="inline-flex w-fit rounded-md border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 hover:border-slate-500"
+                className="inline-flex w-fit rounded-md border border-emerald-300 bg-white/60 px-4 py-2 text-sm font-semibold text-slate-900 hover:border-emerald-400"
               >
                 Ask a question
               </a>
@@ -375,13 +375,13 @@ function App() {
               ].map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25"
+                  className="rounded-xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80"
                 >
-                  <div className="text-sm font-semibold text-white">{item.title}</div>
-                  <div className="mt-2 text-2xl font-semibold tracking-tight text-slate-100">
+                  <div className="text-sm font-semibold text-slate-900">{item.title}</div>
+                  <div className="mt-2 text-2xl font-semibold tracking-tight text-slate-900">
                     {item.time}
                   </div>
-                  <div className="mt-2 text-sm text-slate-300">{item.note}</div>
+                  <div className="mt-2 text-sm text-slate-600">{item.note}</div>
                   {'actionHref' in item && item.actionHref && item.actionLabel ? (
                     <a
                       className="mt-5 inline-flex w-fit rounded-md bg-emerald-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-emerald-300"
@@ -396,14 +396,14 @@ function App() {
           </div>
         </section>
 
-        <section id="ministries" className="relative scroll-mt-24 overflow-hidden border-t border-slate-800/60">
+        <section id="ministries" className="relative scroll-mt-24 overflow-hidden border-t border-emerald-200/70">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/10 via-slate-950 to-slate-950" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50 to-emerald-100" />
             <div className="absolute -bottom-24 right-[-6rem] h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
           </div>
           <div className="relative mx-auto max-w-6xl px-4 py-16">
-            <h2 className="text-2xl font-semibold tracking-tight text-white">Ministries</h2>
-            <p className="mt-2 max-w-prose text-lg text-slate-200">
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Ministries</h2>
+            <p className="mt-2 max-w-prose text-lg text-slate-700">
               A starting set of ministry areas. Rename and adjust to match your church structure.
             </p>
 
@@ -418,29 +418,29 @@ function App() {
               ].map((m) => (
                 <div
                   key={m.title}
-                  className="rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25"
+                  className="rounded-xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80"
                 >
                   <div className="flex items-start justify-between gap-3">
-                    <div className="text-sm font-semibold text-white">{m.title}</div>
+                    <div className="text-sm font-semibold text-slate-900">{m.title}</div>
                     <div aria-hidden="true" className="size-2 rounded-full bg-emerald-500/70" />
                   </div>
-                  <div className="mt-3 text-sm text-slate-300">{m.desc}</div>
+                  <div className="mt-3 text-sm text-slate-600">{m.desc}</div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="watch" className="relative scroll-mt-24 overflow-hidden border-t border-slate-800/60">
+        <section id="watch" className="relative scroll-mt-24 overflow-hidden border-t border-emerald-200/70">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-emerald-950/10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50 to-emerald-100" />
             <div className="absolute -top-24 right-[-6rem] h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
           </div>
           <div className="relative mx-auto max-w-6xl px-4 py-16">
             <div className="grid gap-8 md:grid-cols-2 md:items-center">
               <div>
-                <h2 className="text-2xl font-semibold tracking-tight text-white">Watch online</h2>
-                <p className="mt-3 max-w-prose text-lg text-slate-200">
+                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Watch online</h2>
+                <p className="mt-3 max-w-prose text-lg text-slate-700">
                   Join us online via our social channels. Replace/extend with a YouTube livestream and sermon archive when ready.
                 </p>
                 <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -456,15 +456,15 @@ function App() {
                     href="https://youtube.com/@rccgsta?si=Vxe-RJO1xKlG0qw6"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center justify-center rounded-md border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-slate-500"
+                    className="inline-flex items-center justify-center rounded-md border border-emerald-300 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 hover:border-emerald-400"
                   >
                     YouTube
                   </a>
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25">
-                <div className="aspect-video w-full overflow-hidden rounded-xl border border-emerald-900/40 bg-emerald-950/15">
+              <div className="rounded-2xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80">
+                <div className="aspect-video w-full overflow-hidden rounded-xl border border-emerald-200/70 bg-white/70">
                   <iframe
                     title="RCCG Strong Tower Assembly — YouTube player"
                     src="https://www.youtube.com/embed/wetPLRzidP0?si=QhYAJTKsAevfkenB"
@@ -481,53 +481,53 @@ function App() {
           </div>
         </section>
 
-        <section id="visit" className="relative scroll-mt-24 overflow-hidden border-t border-slate-800/60">
+        <section id="visit" className="relative scroll-mt-24 overflow-hidden border-t border-emerald-200/70">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/10 via-slate-950 to-slate-950" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50 to-emerald-100" />
             <div className="absolute -bottom-24 left-[-6rem] h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
           </div>
           <div className="relative mx-auto max-w-6xl px-4 py-16">
             <div className="grid gap-8 md:grid-cols-2">
               <div>
-                <h2 className="text-2xl font-semibold tracking-tight text-white">Plan a visit</h2>
-                <p className="mt-3 max-w-prose text-lg text-slate-200">
+                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Plan a visit</h2>
+                <p className="mt-3 max-w-prose text-lg text-slate-700">
                   Add the essentials: where to park, what to wear, kids check-in, and what the service is
                   like.
                 </p>
               </div>
               <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25">
-                  <div className="text-sm font-semibold text-white">Arrive</div>
-                  <div className="mt-2 text-sm text-slate-300">Recommend arrival time (e.g., 10–15 mins early).</div>
+                <div className="rounded-xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80">
+                  <div className="text-sm font-semibold text-slate-900">Arrive</div>
+                  <div className="mt-2 text-sm text-slate-600">Recommend arrival time (e.g., 10–15 mins early).</div>
                 </div>
-                <div className="rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25">
-                  <div className="text-sm font-semibold text-white">Dress</div>
-                  <div className="mt-2 text-sm text-slate-300">Whatever you feel comfortable in.</div>
+                <div className="rounded-xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80">
+                  <div className="text-sm font-semibold text-slate-900">Dress</div>
+                  <div className="mt-2 text-sm text-slate-600">Whatever you feel comfortable in.</div>
                 </div>
-                <div className="rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25">
-                  <div className="text-sm font-semibold text-white">Kids</div>
-                  <div className="mt-2 text-sm text-slate-300">Add age groups + check-in details.</div>
+                <div className="rounded-xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80">
+                  <div className="text-sm font-semibold text-slate-900">Kids</div>
+                  <div className="mt-2 text-sm text-slate-600">Add age groups + check-in details.</div>
                 </div>
-                <div className="rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25">
-                  <div className="text-sm font-semibold text-white">After service</div>
-                  <div className="mt-2 text-sm text-slate-300">Tea/coffee and a chance to connect.</div>
+                <div className="rounded-xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80">
+                  <div className="text-sm font-semibold text-slate-900">After service</div>
+                  <div className="mt-2 text-sm text-slate-600">Tea/coffee and a chance to connect.</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="give" className="relative scroll-mt-24 overflow-hidden border-t border-slate-800/60">
+        <section id="give" className="relative scroll-mt-24 overflow-hidden border-t border-emerald-200/70">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-950 to-emerald-950/10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50 to-emerald-100" />
             <div className="absolute -top-24 left-[-6rem] h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
           </div>
           <div className="relative mx-auto max-w-6xl px-4 py-16">
-            <div className="rounded-2xl border border-emerald-900/50 bg-emerald-950/20 p-8 md:p-10 hover:border-emerald-700/60 hover:bg-emerald-950/25">
+            <div className="rounded-2xl border border-emerald-200/70 bg-white/70 p-8 md:p-10 hover:border-emerald-300 hover:bg-white/80">
               <div className="grid gap-8 md:grid-cols-2 md:items-center">
                 <div>
-                  <h2 className="text-2xl font-semibold tracking-tight text-white">Give</h2>
-                  <p className="mt-3 max-w-prose text-lg text-slate-200">
+                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Give</h2>
+                  <p className="mt-3 max-w-prose text-lg text-slate-700">
                     Add your giving options (bank details, online giving platform, and any notes).
                   </p>
                 </div>
@@ -540,7 +540,7 @@ function App() {
                   </Link>
                   <a
                     href="#contact"
-                    className="inline-flex items-center justify-center rounded-md border border-slate-700 px-5 py-3 text-sm font-semibold text-slate-100 hover:border-slate-500"
+                    className="inline-flex items-center justify-center rounded-md border border-emerald-300 bg-white/60 px-5 py-3 text-sm font-semibold text-slate-900 hover:border-emerald-400"
                   >
                     Ask about giving
                   </a>
@@ -550,35 +550,35 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="relative scroll-mt-24 overflow-hidden border-t border-slate-800/60">
+        <section id="contact" className="relative scroll-mt-24 overflow-hidden border-t border-emerald-200/70">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-emerald-950/10 via-slate-950 to-slate-950" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50 to-emerald-100" />
             <div className="absolute -bottom-24 right-[-6rem] h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
           </div>
           <div className="relative mx-auto max-w-6xl px-4 py-16">
             <div className="grid gap-10 md:grid-cols-2">
               <div>
-                <h2 className="text-2xl font-semibold tracking-tight text-white">Contact</h2>
-                <p className="mt-3 max-w-prose text-lg text-slate-200">
+                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Contact</h2>
+                <p className="mt-3 max-w-prose text-lg text-slate-700">
                   We are waiting to hear from you.
                 </p>
 
                 <div className="mt-6 grid gap-3">
-                  <div className="rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25">
-                    <div className="text-sm font-semibold text-white">Email</div>
-                    <div className="mt-2 text-sm text-slate-300">info@rccgstrongtower.org.au</div>
+                  <div className="rounded-xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80">
+                    <div className="text-sm font-semibold text-slate-900">Email</div>
+                    <div className="mt-2 text-sm text-slate-600">info@rccgstrongtower.org.au</div>
                   </div>
-                  <div className="rounded-xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25">
-                    <div className="text-sm font-semibold text-white">Phone</div>
-                    <div className="mt-2 text-sm text-slate-300">+61 416 204 106</div>
+                  <div className="rounded-xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80">
+                    <div className="text-sm font-semibold text-slate-900">Phone</div>
+                    <div className="mt-2 text-sm text-slate-600">+61 416 204 106</div>
                   </div>
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-emerald-900/50 bg-emerald-950/20 p-6 hover:border-emerald-700/60 hover:bg-emerald-950/25">
-                <div className="text-sm font-semibold text-white">Location</div>
-                <div className="mt-2 text-sm text-slate-300">30 McLennan Drive, Kensington VIC 3031</div>
-                <div className="mt-5 aspect-video w-full overflow-hidden rounded-xl border border-emerald-900/40 bg-emerald-950/15">
+              <div className="rounded-2xl border border-emerald-200/70 bg-white/70 p-6 hover:border-emerald-300 hover:bg-white/80">
+                <div className="text-sm font-semibold text-slate-900">Location</div>
+                <div className="mt-2 text-sm text-slate-600">30 McLennan Drive, Kensington VIC 3031</div>
+                <div className="mt-5 aspect-video w-full overflow-hidden rounded-xl border border-emerald-200/70 bg-white/70">
                   <iframe
                     title="RCCG Strong Tower Assembly location map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6305.148363020108!2d144.92788387551641!3d-37.800017871979065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d12e69e81dd%3A0xc41753e9c7aaf8cb!2s30%20McLennan%20Dr%2C%20Kensington%20VIC%203031!5e0!3m2!1sen!2sau!4v1770967891072!5m2!1sen!2sau"
@@ -589,7 +589,7 @@ function App() {
                     referrerPolicy="no-referrer-when-downgrade"
                   />
                 </div>
-                <div className="mt-3 text-xs text-slate-400">Map provided by Google.</div>
+                <div className="mt-3 text-xs text-slate-500">Map provided by Google.</div>
               </div>
             </div>
           </div>
@@ -598,14 +598,14 @@ function App() {
         )}
       </main>
 
-      <footer className="border-t border-slate-800/60">
-        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-10 text-sm text-slate-300 md:flex-row md:items-center md:justify-between">
+      <footer className="border-t border-emerald-200/70">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-10 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
           <div>© {new Date().getFullYear()} RCCG Strong Tower Assembly. All rights reserved.</div>
           <div className="flex gap-4">
-            <a className="hover:text-white" href="https://www.facebook.com/rccgsta/" target="_blank" rel="noreferrer">
+            <a className="hover:text-slate-900" href="https://www.facebook.com/rccgsta/" target="_blank" rel="noreferrer">
               Facebook
             </a>
-            <a className="hover:text-white" href="https://www.instagram.com/rccgsta/" target="_blank" rel="noreferrer">
+            <a className="hover:text-slate-900" href="https://www.instagram.com/rccgsta/" target="_blank" rel="noreferrer">
               Instagram
             </a>
           </div>
